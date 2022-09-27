@@ -1,3 +1,7 @@
+h1,h2,h3,h4,h5,h5{
+    font-family: 'Combo', cursive;
+    font-family: 'Lobster', cursive;
+}
 .menu{
     width: 100%;
     height: 100px;
@@ -36,14 +40,14 @@
 
 .iconos ul li i,
 .iconos ul li svg{
-    background-color: red;
+    background-color: rgb(231, 114, 190);
     padding: 5px 6px;
     border-radius: 50%;
 }
 .iconos ul li i:hover,
 .iconos ul li svg:hover{
     background-color: white;
-    color: red;
+    color: rgb(231, 114, 190);
 
 }
 /*imagen principal*/
@@ -58,7 +62,7 @@
     justify-content:flex-end;
 }
 .principal .con-texto h1{
-    color: red;
+    color: rgb(231, 114, 190);
     font-size: 50px;
     font-weight: bold;
 }
@@ -66,7 +70,7 @@
     font-size: 25px;
 }
 .principal .con-texto a{
-    background-color: red;
+    background-color: rgb(231, 114, 190);
     color: white;
     padding: 10px 20px;
     border-radius: 1px solid white;
@@ -74,8 +78,8 @@
 }
 .principal .con-texto a:hover{
     background-color: white;
-    color: red;
-    border:2px solid red;
+    color: rgb(231, 114, 190);
+    border:2px solid rgb(143, 224, 238);
 
 }
 .principal .con-texto{
@@ -84,14 +88,118 @@
     margin-right: 150px;
 }
 /*descuento*/
-.descuento{
+.descuentos,
+.productos,
+.servicios,
+.nosotros{
     width: 100%;
-    height: 300px;
+    height: auto;
     display:flex;
-    justify-content:center;
+    flex-direction: column;
+    align-items: center;
 }
-.descuento img{
+.descuentos img{
+    width: 170px;
+    height: auto;
+    margin: 0 15px;
+}
+.titulo-des h2,
+.titulo-pro h2,
+.titulo-ser h2,
+.titulo-nos h2{
+    font-size: 50px;
+    color:plum;
+}
+/*productos*/
+.con-productos{
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.tarjeta{
     width: 300px;
     height: auto;
-    margin: 0 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.tarjeta .con-texto h3{
+    font-size: 30px;
+    color:rgb(231, 114, 190);
+    font-weight: bold;
+    text-align: center;
+
+}
+.tarjeta .con-texto p{
+    font-size: 20px;
+    text-align: center;
+}
+.tarjeta .botones{
+    display: flex;
+    justify-content: space-around;
+}
+.tarjeta .botones span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.tarjeta .botones a{
+    padding: 7px 12px;
+    color: white;
+    background-color: rgb(255, 0, 140);
+    border-radius: 10px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.tarjeta img{
+    width: 100%;
+    height: auto;
+}
+/*servicios*/
+.con-servicios,
+.con-nosotros{
+    width: 100%;
+    height: auto;
+}
+.servicios-1,
+.servicios-2{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.servicios-1 img,
+.servicios-2 img{
+    width: 40%;
+}
+.servicios-1 .con-texto,
+.servicios-2 .con-texto{
+    width: 50%;
+    margin-left: 50px;
+}
+.servicios-1 .con-texto h3,
+.servicios-2 .con-texto h3,
+.con-nosotros .con-texto h2{
+    font-size: 35px;
+    color: pink;
+    font-weight: bold;
+}
+.servicios-1 .con-texto p,
+.servicios-1 .con-texto ul,
+.servicios-2 .con-texto p,
+.servicios-2 .con-texto ul,
+.con-nosotros .con-texto{
+    font-size: 20px;
+    color: gray;
+}
+/*nosotros*/
+.con-nosotros{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+
 }
